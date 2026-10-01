@@ -1,0 +1,101 @@
+{
+  "version": "public-source-freeze/1",
+  "sources": [
+    {
+      "symbol": "BTCUSDT",
+      "frame": "1m",
+      "path": "docs/research/jev-expanded-2026-09-22/run/shared-data/BTCUSDT-1m-bars.json",
+      "sha256": "399ad9652e64db1b815c1540155b5cc4d014fc1240382804f4e833127384a2d5",
+      "rowCount": 48960,
+      "excludedLastRow": true,
+      "fromTime": 1787127000000,
+      "throughTime": 1790064480000,
+      "integrity": {
+        "invalid": 0,
+        "gaps": 0,
+        "duplicates": 0,
+        "pass": true
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "frame": "5m",
+      "path": "docs/research/jev-expanded-2026-09-22/run/shared-data/BTCUSDT-5m-bars.json",
+      "sha256": "014ed3817eb33e3e6a85d0813df26ad9242ec4e4eec18adbb301c24a92947055",
+      "rowCount": 9792,
+      "excludedLastRow": true,
+      "fromTime": 1787127000000,
+      "throughTime": 1790064000000,
+      "integrity": {
+        "invalid": 0,
+        "gaps": 0,
+        "duplicates": 0,
+        "pass": true
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "frame": "4h",
+      "path": "tests/fixtures/analysis-benchmark-real-BTCUSDT-4h.json",
+      "sha256": "7ba4fbc0cc4472fb3f70791aee18310c614d33f263b84fc9cef5d96aeca2ef2d",
+      "rowCount": 1500,
+      "excludedLastRow": true,
+      "fromTime": 1768507200000,
+      "throughTime": 1790078400000,
+      "integrity": {
+        "invalid": 0,
+        "gaps": 0,
+        "duplicates": 0,
+        "pass": true
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "frame": "1m",
+      "path": "docs/research/jev-expanded-2026-09-22/run/shared-data/ETHUSDT-1m-bars.json",
+      "sha256": "7214ca4141d31fe955b9d38654bf0cc281fc41278f65c9ac46812bb1a67abf32",
+      "rowCount": 48960,
+      "excludedLastRow": true,
+      "fromTime": 1787127000000,
+      "throughTime": 1790064480000,
+      "integrity": {
+        "invalid": 0,
+        "gaps": 0,
+        "duplicates": 0,
+        "pass": true
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "frame": "5m",
+      "path": "docs/research/jev-expanded-2026-09-22/run/shared-data/ETHUSDT-5m-bars.json",
+      "sha256": "f9287352516a5d93257141cdd559f185dd835bb18ffbff686266c2291aeef1ac",
+      "rowCount": 9792,
+      "excludedLastRow": true,
+      "fromTime": 1787127000000,
+      "throughTime": 1790064000000,
+      "integrity": {
+        "invalid": 0,
+        "gaps": 0,
+        "duplicates": 0,
+        "pass": true
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "frame": "4h",
+      "path": "tests/fixtures/analysis-benchmark-real-ETHUSDT-4h.json",
+      "sha256": "da3b7f42a5ed632fbb75d4a6dff55304e246da358545173ed5b114b2e23da883",
+      "rowCount": 1500,
+      "excludedLastRow": true,
+      "fromTime": 1768507200000,
+      "throughTime": 1790078400000,
+      "integrity": {
+        "invalid": 0,
+        "gaps": 0,
+        "duplicates": 0,
+        "pass": true
+      }
+    }
+  ]
+}

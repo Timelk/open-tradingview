@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-01",
+  "browser": "Independent Chromium via agent-browser",
+  "hardware": "Apple M5 / ANGLE Metal",
+  "viewport": [
+    1600,
+    1000
+  ],
+  "dpr": 1,
+  "source": "deterministic mock OHLCV",
+  "total": 1000000,
+  "indicators": [
+    "MA",
+    "VOL",
+    "MACD",
+    "BOLL",
+    "RSI"
+  ],
+  "action": "180 requestAnimationFrame-driven alternating zoom steps; profiler disabled",
+  "fps": 60.00067039855193,
+  "render_sample_p95_ms": 4.300000011920929,
+  "full_frame_p95_ms": 4.300000011920929,
+  "tick_p95_ms": 0.19999998807907104,
+  "visible_bars": 931376,
+  "rendered_candles": 1862,
+  "ohlcv_factor": 512,
+  "divergence_rendering": {
+    "mode": "pixel-density",
+    "archive": 17565,
+    "projected": 186,
+    "budgetPerSeries": 186
+  },
+  "initial_fps": 9.471300372502542,
+  "initial_render_sample_p95_ms": 112.39999997615814,
+  "scope": "one machine/scenario, not a universal performance guarantee"
+}

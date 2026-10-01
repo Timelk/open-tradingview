@@ -1,0 +1,27 @@
+node_modules/
+dist/
+.vite/
+.DS_Store
+*.local
+__pycache__/
+.data/market/
+
+# Local depth sampler database (binary, machine-specific)
+.data/depth/
+
+# Local MCP agent bridge runtime discovery records
+.data/agent-bridge/
+
+# Private environment files; keep the public configuration template.
+.env
+.env.*
+!.env.example
+
+# Machine-local agent state and browser traces.
+.omc/
+.playwright-mcp/
+.claude/settings.local.json
+
+# Local package caches and verification output.
+.pnpm-store/
+coverage/

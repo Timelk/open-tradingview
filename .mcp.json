@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "open-tradingview": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${CLAUDE_PROJECT_DIR:-.}/mcp/server.ts"
+      ]
+    }
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "chartId": "chart-8a87c01c",
+  "market": {
+    "symbol": "BTCUSDT",
+    "interval": "1h"
+  },
+  "structure": {
+    "range": {
+      "from": 1790244000000,
+      "to": 1790784000000,
+      "bars": 151,
+      "barsAgoEnd": 0,
+      "intervalMs": 3600000,
+      "high": {
+        "time": 1790773200000,
+        "value": 85632.7
+      },
+      "low": {
+        "time": 1790604000000,
+        "value": 82500.1
+      },
+      "open": 83231.6,
+      "close": 84341.5,
+      "changePct": 1.333507947,
+      "positionInRange": 0.5878184256
+    },
+    "atr14": {
+      "value": 612.1253801,
+      "pctOfPrice": 0.7257700896
+    },
+    "trend": {
+      "slopePerBar": -4.920868247,
+      "slopePctPer100Bars": -0.5863835705,
+      "r2": 0.1642724932,
+      "sigma": 483.8028938,
+      "start": {
+        "time": 1790244000000,
+        "value": 84287.99624
+      },
+      "end": {
+        "time": 1790784000000,
+        "value": 83549.86601
+      },
+      "direction": "down"
+    },
+    "pivots": {
+      "strength": 3,
+      "total": 28,
+      "items": [
+        {
+          "type": "high",
+          "label": "LH",
+          "time": 1790380800000,
+          "price": 84106.8,
+          "barsAgo": 112,
+          "legAtr": 0.8491724358
+        },
+        {
+          "type": "low",
+          "label": "HL",
+          "time": 1790395200000,
+          "price": 83794.2,
+          "barsAgo": 108,
+          "legAtr": 0.5106796911
+        },
+        {
+          "type": "high",
+          "label": "HH",
+          "time": 1790409600000,
+          "price": 84296.6,
+          "barsAgo": 104,
+          "legAtr": 0.8207468867
+        },
+        {
+          "type": "low",
+          "label": "LL",
+          "time": 1790427600000,
+          "price": 83785.4,
+          "barsAgo": 99,
+          "legAtr": 0.8351230265
+        },
+        {
+          "type": "low",
+          "label": "LL",
+          "time": 1790452800000,
+          "price": 83778.4,
+          "barsAgo": 92,
+          "legAtr": 0.8465585922
+        },
+        {
+          "type": "high",
+          "label": "HH",
+          "time": 1790470800000,
+          "price": 84559.6,
+          "barsAgo": 87,
+          "legAtr": 1.276209132
+        },
+        {
+          "type": "high",
+          "label": "HH",
+          "time": 1790514000000,
+          "price": 85146.4,
+          "barsAgo": 75,
+          "legAtr": 2.234836268
+        },
+        {
+          "type": "low",
+          "label": "HL",
+          "time": 1790521200000,
+          "price": 84266,
+          "barsAgo": 73,
+          "legAtr": 1.438267434
+        },
+        {
+          "type": "high",
+          "label": "LH",
+          "time": 1790535600000,
+          "price": 84810.8,
+          "barsAgo": 69,
+          "legAtr": 0.8900137418
+        },
+        {
+          "type": "high",
+          "label": "HH",
+          "time": 1790553600000,
+          "price": 84966.8,
+          "barsAgo": 64,
+          "legAtr": 1.144863492
+        },
+        {
+          "type": "low",
+          "label": "LL",
+          "time": 1790571600000,
+          "price": 82617.8,
+          "barsAgo": 59,
+          "legAtr": 3.837449118
+        },
+        {
+          "type": "low",
+          "label": "LL",
+          "time": 1790586000000,
+          "price": 82551.6,
+          "barsAgo": 55,
+          "legAtr": 3.945596897
+        },
+        {
+          "type": "low",
+          "label": "LL",
+          "time": 1790604000000,
+          "price": 82500.1,
+          "barsAgo": 50,
+          "legAtr": 4.029729987
+        },
+        {
+          "type": "high",
+          "label": "LH",
+          "time": 1790614800000,
+          "price": 84350,
+          "barsAgo": 47,
+          "legAtr": 3.022093284
+        },
+        {
+          "type": "low",
+          "label": "HL",
+          "time": 1790643600000,
+          "price": 82724.3,
+          "barsAgo": 39,
+          "legAtr": 2.655828451
+        },
+        {
+          "type": "high",
+          "label": "HH",
+          "time": 1790686800000,
+          "price": 84554.9,
+          "barsAgo": 27,
+          "legAtr": 2.990563796
+        },
+        {
+          "type": "low",
+          "label": "HL",
+          "time": 1790697600000,
+          "price": 82851.5,
+          "barsAgo": 24,
+          "legAtr": 2.78276323
+        },
+        {
+          "type": "high",
+          "label": "LH",
+          "time": 1790722800000,
+          "price": 83824.7,
+          "barsAgo": 17,
+          "legAtr": 1.589870363
+        },
+        {
+          "type": "low",
+          "label": "HL",
+          "time": 1790751600000,
+          "price": 82901.3,
+          "barsAgo": 9,
+          "legAtr": 1.508514481
+        },
+        {
+          "type": "high",
+          "label": "HH",
+          "time": 1790773200000,
+          "price": 85632.7,
+          "barsAgo": 3,
+          "legAtr": 4.462157736
+        }
+      ]
+    },
+    "levels": {
+      "band": 153.031345,
+      "items": [
+        {
+          "price": 85632.7,
+          "low": 85632.7,
+          "high": 85632.7,
+          "touches": 1,
+          "highs": 1,
+          "lows": 0,
+          "first": 1790773200000,
+          "last": 1790773200000,
+          "side": "resistance",
+          "distancePct": 1.530918943,
+          "distanceAtr": 2.109371776
+        },
+        {
+          "price": 85185.2,
+          "low": 85146.4,
+          "high": 85224,
+          "touches": 2,
+          "highs": 2,
+          "lows": 0,
+          "first": 1790334000000,
+          "last": 1790514000000,
+          "side": "resistance",
+          "distancePct": 1.000337912,
+          "distanceAtr": 1.378312397
+        },
+        {
+          "price": 84883.55,
+          "low": 84810.8,
+          "high": 84966.8,
+          "touches": 4,
+          "highs": 4,
+          "lows": 0,
+          "first": 1790258400000,
+          "last": 1790553600000,
+          "side": "resistance",
+          "distancePct": 0.6426847993,
+          "distanceAtr": 0.8855211982
+        },
+        {
+          "price": 84557.25,
+          "low": 84554.9,
+          "high": 84559.6,
+          "touches": 2,
+          "highs": 2,
+          "lows": 0,
+          "first": 1790470800000,
+          "last": 1790686800000,
+          "side": "resistance",
+          "distancePct": 0.2558052679,
+          "distanceAtr": 0.3524604714
+        },
+        {
+          "price": 84234.86,
+          "low": 84106.8,
+          "high": 84350,
+          "touches": 5,
+          "highs": 4,
+          "lows": 1,
+          "first": 1790366400000,
+          "last": 1790614800000,
+          "side": "support",
+          "distancePct": -0.1264383489,
+          "distanceAtr": -0.1742126752
+        },
+        {
+          "price": 83742.23333,
+          "low": 83587,
+          "high": 83824.7,
+          "touches": 6,
+          "highs": 1,
+          "lows": 5,
+          "first": 1790319600000,
+          "last": 1790722800000,
+          "side": "support",
+          "distancePct": -0.7105240797,
+          "distanceAtr": -0.978993334
+        },
+        {
+          "price": 82825.7,
+          "low": 82724.3,
+          "high": 82901.3,
+          "touches": 3,
+          "highs": 0,
+          "lows": 3,
+          "first": 1790643600000,
+          "last": 1790751600000,
+          "side": "support",
+          "distancePct": -1.797217266,
+          "distanceAtr": -2.47629007
+        },
+        {
+          "price": 82556.5,
+          "low": 82500.1,
+          "high": 82617.8,
+          "touches": 3,
+          "highs": 0,
+          "lows": 3,
+          "first": 1790571600000,
+          "last": 1790604000000,
+          "side": "support",
+          "distancePct": -2.116395843,
+          "distanceAtr": -2.916069253
+        }
+      ]
+    },
+    "nearest": {
+      "resistance": {
+        "price": 84557.25,
+        "distancePct": 0.2558052679
+      },
+      "support": {
+        "price": 84234.86,
+        "distancePct": -0.1264383489
+      }
+    }
+  },
+  "drawResult": {
+    "created": [
+      {
+        "id": "ed0a1571-cb4a-4ccf-821f-2692157f2660",
+        "tool": "horizontal-line",
+        "name": "AI · Nearest support",
+        "paneId": "main",
+        "groupId": "d7d96b35-a1c6-470e-8020-0f3548cf9d4c",
+        "points": [
+          {
+            "time": "2026-09-24T19:00:00+09:00",
+            "value": 84234.86
+          }
+        ],
+        "visible": true
+      },
+      {
+        "id": "c06b6241-572d-4e9a-aef8-ef5741fbfcf7",
+        "tool": "horizontal-line",
+        "name": "AI · Nearest resistance",
+        "paneId": "main",
+        "groupId": "d7d96b35-a1c6-470e-8020-0f3548cf9d4c",
+        "points": [
+          {
+            "time": "2026-09-24T19:00:00+09:00",
+            "value": 84557.25
+          }
+        ],
+        "visible": true
+      },
+      {
+        "id": "2acdef04-e958-4eec-a786-de3319f93e2b",
+        "tool": "trend-line",
+        "name": "AI · OLS trend channel centre",
+        "paneId": "main",
+        "groupId": "d7d96b35-a1c6-470e-8020-0f3548cf9d4c",
+        "points": [
+          {
+            "time": "2026-09-24T19:00:00+09:00",
+            "value": 84287.99624
+          },
+          {
+            "time": "2026-10-01T01:00:00+09:00",
+            "value": 83549.86601
+          }
+        ],
+        "visible": true
+      }
+    ],
+    "groups": [
+      {
+        "id": "d7d96b35-a1c6-470e-8020-0f3548cf9d4c",
+        "name": "AI Agent · Market Structure",
+        "paneId": "main",
+        "reused": false
+      }
+    ],
+    "layout": {
+      "onScreen": {
+        "ed0a1571-cb4a-4ccf-821f-2692157f2660": "full",
+        "c06b6241-572d-4e9a-aef8-ef5741fbfcf7": "full",
+        "2acdef04-e958-4eec-a786-de3319f93e2b": "partial"
+      },
+      "issues": [
+        {
+          "id": "ed0a1571-cb4a-4ccf-821f-2692157f2660",
+          "name": "AI · Nearest support",
+          "kind": "label-covers-candles",
+          "detail": "label \"84,234.86\" covers 4 candles"
+        },
+        {
+          "id": "c06b6241-572d-4e9a-aef8-ef5741fbfcf7",
+          "name": "AI · Nearest resistance",
+          "kind": "label-covers-candles",
+          "detail": "label \"84,557.25\" covers 2 candles"
+        }
+      ]
+    },
+    "undo": "undo_redo {action:\"undo\"} removes this whole batch in one step"
+  }
+}

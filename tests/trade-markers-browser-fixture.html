@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Trade marker rendering verification</title><style>
+*{box-sizing:border-box}body{margin:0;padding:24px;background:#10151c;color:#d6e0eb;font:13px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}h1{font-size:18px;font-weight:500;margin:0 0 8px}p{color:#8ea0b5;margin:0 0 22px}section{width:860px;margin:0 0 22px;border:1px solid #2d3947;border-radius:8px;overflow:hidden}h2{margin:0;padding:10px 14px;font-size:12px;font-weight:500;background:#1b2531;color:#b2c5dc}canvas{display:block;width:860px;height:280px;background:#131a22}
+</style></head>
+<body><h1>买卖标记 · Canvas 验证</h1><p>固定交点位置 / 同侧标签 / 密集退化 / 上下边缘 / DPR 1 与 DPR 2</p>
+<section><h2>1× Canvas · CSS 尺寸 860 × 280</h2><canvas id="one"></canvas></section>
+<section><h2>2× Canvas · 相同 CSS 尺寸，像素密度加倍</h2><canvas id="two"></canvas></section>
+<script type="module">
+import {layoutTradeMarkers,drawTradeMarkers} from '/src/lib/render/trade-markers.ts';
+const points=[{id:'buy',x:115,y:78,side:'buy',kind:'signal'},{id:'sell',x:275,y:90,side:'sell',kind:'fill',label:'Close long'},{id:'short',x:430,y:80,side:'sell',kind:'signal'},{id:'cover',x:580,y:85,side:'buy',kind:'fill'},...Array.from({length:18},(_,i)=>({x:80+i*13,y:198,side:'buy',kind:'signal'})),{x:450,y:24,side:'sell',kind:'fill'},{x:530,y:257,side:'buy',kind:'fill'},{x:680,y:4,side:'sell'},{x:760,y:277,side:'buy'},{x:710,y:95,side:'buy',color:'#70aaff'}];
+window.markerFixture=[];
+for(const [id,dpr] of [['one',1],['two',2]]){
+ const canvas=document.getElementById(id);canvas.width=860*dpr;canvas.height=280*dpr;const ctx=canvas.getContext('2d');ctx.setTransform(dpr,0,0,dpr,0,0);
+ ctx.strokeStyle='#24313f';ctx.lineWidth=1;for(let y=40;y<280;y+=40){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(860,y);ctx.stroke();}
+ ctx.strokeStyle='#7486e5';ctx.beginPath();ctx.moveTo(20,110);ctx.bezierCurveTo(130,30,210,160,320,65);ctx.bezierCurveTo(400,20,500,110,600,80);ctx.lineTo(840,90);ctx.stroke();
+ ctx.strokeStyle='#d1a460';ctx.beginPath();ctx.moveTo(20,35);ctx.bezierCurveTo(145,125,175,40,300,105);ctx.bezierCurveTo(470,25,500,65,620,98);ctx.lineTo(840,72);ctx.stroke();
+ ctx.font='11px sans-serif';ctx.fillStyle='#6f8298';ctx.fillText('同一交点 · 买入在下，卖出在上',28,153);ctx.fillText('密集标记保留锚点，不左右偏移',28,264);ctx.fillText('边缘紧凑箭头',428,151);ctx.fillText('显式自定义色',659,151);
+ const layouts=layoutTradeMarkers(points,{left:0,top:0,right:860,bottom:280});drawTradeMarkers(ctx,layouts,{clipBounds:{left:0,top:0,right:860,bottom:280}});window.markerFixture.push({dpr,layouts});
+}
+</script></body></html>

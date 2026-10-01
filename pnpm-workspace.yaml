@@ -1,0 +1,6 @@
+packages:
+  - '.'
+
+# The pinned esbuild packages validate their platform binary during install.
+allowBuilds:
+  esbuild: true

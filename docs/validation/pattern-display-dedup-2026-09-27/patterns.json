@@ -1,0 +1,1668 @@
+[
+  {
+    "id": "hscp:huzi-double:1790395200000:1790409600000:1790427600000",
+    "family": "huzi-double",
+    "name": "双背离共振 · W 双底",
+    "direction": "bullish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "B1",
+        "time": 1790395200000,
+        "value": 83794.2
+      },
+      {
+        "label": "N",
+        "time": 1790409600000,
+        "value": 84296.6
+      },
+      {
+        "label": "B2",
+        "time": 1790427600000,
+        "value": 83785.4
+      }
+    ],
+    "confirmedAt": 1790467200000,
+    "zone": {
+      "low": 84276.32800000001,
+      "high": 84316.872
+    },
+    "invalidation": 83765.128,
+    "targets": [
+      84803.40000000002,
+      85050.66180000003
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 0.6269469672753061,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 1.92014990557955,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "RSI(14) 同侧极值背离差",
+        "value": 1.2557194612504787,
+        "expected": ">= 1.0"
+      },
+      {
+        "label": "双极值偏差 / 颈线高度",
+        "value": 0.017363851618000407,
+        "expected": "≤ 0.240"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（双背离极值反转）· 闭柱确认量能 1.92x SMA20，按确认收盘价测量初始 T1 盈亏比 0.63，价格处于 EMA(50) 顺势侧，同一对价格新极值具备 RSI(14) 与 MACD 线双背离。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 3 根右侧收盘确认拐点，连续 1 根收盘向上突破颈线。全部锚点可知后，最多等待 24 柱破位（自动 max(24, 结构跨度×2)）。突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩。收盘回入结构记突破回落，越极值才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "confirmed",
+    "stage": "failed-breakout",
+    "formation": "complete",
+    "pivotStrength": 3,
+    "guides": [
+      {
+        "role": "neckline",
+        "points": [
+          {
+            "label": "neckline",
+            "time": 1790395200000,
+            "value": 84296.6
+          },
+          {
+            "label": "neckline",
+            "time": 1790467200000,
+            "value": 84296.6
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1790463600000,
+        "knownAt": 1790467200000,
+        "value": 84403.3,
+        "boundary": 84296.6
+      },
+      {
+        "kind": "failed-breakout",
+        "time": 1790467200000,
+        "knownAt": 1790470800000,
+        "value": 84266.8,
+        "boundary": 84296.6
+      }
+    ],
+    "divergences": [
+      {
+        "indicator": "rsi",
+        "series": "rsi",
+        "params": {
+          "period": 14
+        },
+        "points": [
+          {
+            "time": 1790395200000,
+            "value": 47.37422017905855
+          },
+          {
+            "time": 1790452800000,
+            "value": 48.629939640309026
+          }
+        ],
+        "minDelta": 1
+      },
+      {
+        "indicator": "macd",
+        "series": "dif",
+        "params": {
+          "fast": 12,
+          "slow": 26,
+          "signal": 9
+        },
+        "points": [
+          {
+            "time": 1790395200000,
+            "value": -73.66516174345452
+          },
+          {
+            "time": 1790452800000,
+            "value": -10.159264440939296
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hscp:huzi-double:1790395200000:1790409600000:1790452800000",
+    "family": "huzi-double",
+    "name": "双背离共振 · W 双底",
+    "direction": "bullish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "B1",
+        "time": 1790395200000,
+        "value": 83794.2
+      },
+      {
+        "label": "N",
+        "time": 1790409600000,
+        "value": 84296.6
+      },
+      {
+        "label": "B2",
+        "time": 1790452800000,
+        "value": 83778.4
+      }
+    ],
+    "confirmedAt": 1790467200000,
+    "zone": {
+      "low": 84276.18800000001,
+      "high": 84317.012
+    },
+    "invalidation": 83757.988,
+    "targets": [
+      84806.90000000002,
+      85056.32480000003
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 0.6254338986413038,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 1.92014990557955,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "RSI(14) 同侧极值背离差",
+        "value": 1.2557194612504787,
+        "expected": ">= 1.0"
+      },
+      {
+        "label": "双极值偏差 / 颈线高度",
+        "value": 0.030962179110331903,
+        "expected": "≤ 0.240"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（双背离极值反转）· 闭柱确认量能 1.92x SMA20，按确认收盘价测量初始 T1 盈亏比 0.63，价格处于 EMA(50) 顺势侧，同一对价格新极值具备 RSI(14) 与 MACD 线双背离。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 3 根右侧收盘确认拐点，连续 1 根收盘向上突破颈线。全部锚点可知后，最多等待 32 柱破位（自动 max(24, 结构跨度×2)）。突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩。收盘回入结构记突破回落，越极值才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "confirmed",
+    "stage": "failed-breakout",
+    "formation": "complete",
+    "pivotStrength": 3,
+    "guides": [
+      {
+        "role": "neckline",
+        "points": [
+          {
+            "label": "neckline",
+            "time": 1790395200000,
+            "value": 84296.6
+          },
+          {
+            "label": "neckline",
+            "time": 1790467200000,
+            "value": 84296.6
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1790463600000,
+        "knownAt": 1790467200000,
+        "value": 84403.3,
+        "boundary": 84296.6
+      },
+      {
+        "kind": "failed-breakout",
+        "time": 1790467200000,
+        "knownAt": 1790470800000,
+        "value": 84266.8,
+        "boundary": 84296.6
+      }
+    ],
+    "divergences": [
+      {
+        "indicator": "rsi",
+        "series": "rsi",
+        "params": {
+          "period": 14
+        },
+        "points": [
+          {
+            "time": 1790395200000,
+            "value": 47.37422017905855
+          },
+          {
+            "time": 1790452800000,
+            "value": 48.629939640309026
+          }
+        ],
+        "minDelta": 1
+      },
+      {
+        "indicator": "macd",
+        "series": "dif",
+        "params": {
+          "fast": 12,
+          "slow": 26,
+          "signal": 9
+        },
+        "points": [
+          {
+            "time": 1790395200000,
+            "value": -73.66516174345452
+          },
+          {
+            "time": 1790452800000,
+            "value": -10.159264440939296
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hscp:huzi-triangle:1788940800000:1789128000000:1789135200000:1789344000000:1789416000000",
+    "family": "huzi-triangle",
+    "name": "顺势共振 · 上升三角形",
+    "direction": "bearish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "A",
+        "time": 1788940800000,
+        "value": 79737.3
+      },
+      {
+        "label": "B",
+        "time": 1789128000000,
+        "value": 76000.3
+      },
+      {
+        "label": "C",
+        "time": 1789135200000,
+        "value": 79859.8
+      },
+      {
+        "label": "D",
+        "time": 1789344000000,
+        "value": 76350.1
+      },
+      {
+        "label": "E",
+        "time": 1789416000000,
+        "value": 79570.9
+      }
+    ],
+    "confirmedAt": 1789484400000,
+    "zone": {
+      "low": 76417.26000000001,
+      "high": 76726.02000000002
+    },
+    "invalidation": 79750.88136239782,
+    "targets": [
+      72712.14000000001,
+      70737.71652000002
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 0.8311546842348502,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 3.160492125392485,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "末端 / 初始宽度",
+        "value": 0.766963770940511,
+        "expected": "0.10–0.88"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（顺势收敛突破）· 闭柱确认量能 3.16x SMA20，按确认收盘价测量初始 T1 盈亏比 0.83，价格处于 EMA(50) 顺势侧。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 12 根右侧收盘确认拐点，连续 1 根收盘向下突破实际拟合边界。全部锚点可知后，最多等待 264 柱破位（自动 max(24, 结构跨度×2)）。突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩，至收敛顶点前停止结构观察。收盘回入结构记突破回落，越对侧边界才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "invalidated",
+    "stage": "invalidated",
+    "formation": "complete",
+    "pivotStrength": 12,
+    "guides": [
+      {
+        "role": "upper",
+        "points": [
+          {
+            "label": "upper",
+            "time": 1788940800000,
+            "value": 79811.55585831063
+          },
+          {
+            "label": "upper",
+            "time": 1789491600000,
+            "value": 79592.20027247956
+          }
+        ]
+      },
+      {
+        "role": "lower",
+        "points": [
+          {
+            "label": "lower",
+            "time": 1788940800000,
+            "value": 75697.14000000001
+          },
+          {
+            "label": "lower",
+            "time": 1789491600000,
+            "value": 76589.13000000002
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1789480800000,
+        "knownAt": 1789484400000,
+        "value": 75907,
+        "boundary": 76571.64000000001
+      },
+      {
+        "kind": "failed-breakout",
+        "time": 1789491600000,
+        "knownAt": 1789495200000,
+        "value": 76931,
+        "boundary": 76589.13000000002
+      },
+      {
+        "kind": "invalidation",
+        "time": 1789736400000,
+        "knownAt": 1789740000000,
+        "value": 80046.5,
+        "boundary": 79750.88136239782
+      }
+    ],
+    "invalidatedAt": 1789740000000
+  },
+  {
+    "id": "hscp:huzi-channel:1788624000000:1788638400000:1788670800000:1788678000000:1788688800000",
+    "family": "huzi-channel",
+    "name": "顺势共振 · 下降通道",
+    "direction": "bullish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "A",
+        "time": 1788624000000,
+        "value": 80167
+      },
+      {
+        "label": "B",
+        "time": 1788638400000,
+        "value": 79653
+      },
+      {
+        "label": "C",
+        "time": 1788670800000,
+        "value": 80085.2
+      },
+      {
+        "label": "D",
+        "time": 1788678000000,
+        "value": 79523.6
+      },
+      {
+        "label": "E",
+        "time": 1788688800000,
+        "value": 79997.9
+      }
+    ],
+    "confirmedAt": 1788735600000,
+    "zone": {
+      "low": 79885.1221081081,
+      "high": 79936.59410810811
+    },
+    "invalidation": 79321.40945454547,
+    "targets": [
+      80554.2581081081,
+      80893.45241891891
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 0.8024352262696581,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 1.6868947097955551,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "末端 / 初始宽度",
+        "value": 1.1136322693975107,
+        "expected": "0.75–1.25"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（顺势收敛突破）· 闭柱确认量能 1.69x SMA20，按确认收盘价测量初始 T1 盈亏比 0.80，价格处于 EMA(50) 顺势侧。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 3 根右侧收盘确认拐点，连续 1 根收盘向上突破实际拟合边界。全部锚点可知后，最多等待 36 柱破位（自动 max(24, 结构跨度×2)）。突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩。收盘回入结构记突破回落，越对侧边界才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "invalidated",
+    "stage": "invalidated",
+    "formation": "complete",
+    "pivotStrength": 3,
+    "guides": [
+      {
+        "role": "upper",
+        "points": [
+          {
+            "label": "upper",
+            "time": 1788624000000,
+            "value": 80174.00675675677
+          },
+          {
+            "label": "upper",
+            "time": 1788746400000,
+            "value": 79875.77162162162
+          }
+        ]
+      },
+      {
+        "role": "lower",
+        "points": [
+          {
+            "label": "lower",
+            "time": 1788624000000,
+            "value": 79700.05454545455
+          },
+          {
+            "label": "lower",
+            "time": 1788746400000,
+            "value": 79300.09090909093
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1788732000000,
+        "knownAt": 1788735600000,
+        "value": 80005.4,
+        "boundary": 79910.8581081081
+      },
+      {
+        "kind": "failed-breakout",
+        "time": 1788746400000,
+        "knownAt": 1788750000000,
+        "value": 79842.9,
+        "boundary": 79875.77162162162
+      },
+      {
+        "kind": "invalidation",
+        "time": 1788771600000,
+        "knownAt": 1788775200000,
+        "value": 79278.5,
+        "boundary": 79321.40945454547
+      }
+    ],
+    "invalidatedAt": 1788775200000
+  },
+  {
+    "id": "hscp:huzi-wedge:1788343200000:1788364800000:1788397200000:1788400800000:1788411600000",
+    "family": "huzi-wedge",
+    "name": "顺势共振 · 上升楔形",
+    "direction": "bullish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "A",
+        "time": 1788343200000,
+        "value": 76151.9
+      },
+      {
+        "label": "B",
+        "time": 1788364800000,
+        "value": 77546.7
+      },
+      {
+        "label": "C",
+        "time": 1788397200000,
+        "value": 76927.3
+      },
+      {
+        "label": "D",
+        "time": 1788400800000,
+        "value": 77887.9
+      },
+      {
+        "label": "E",
+        "time": 1788411600000,
+        "value": 77053.8
+      }
+    ],
+    "confirmedAt": 1788440400000,
+    "zone": {
+      "low": 78159.65999999997,
+      "high": 78298.53999999998
+    },
+    "invalidation": 77354.74737541529,
+    "targets": [
+      79965.09999999998,
+      80798.53479999996
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 1.0688307467906795,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 2.922777472844425,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "末端 / 初始宽度",
+        "value": 0.7668330551479179,
+        "expected": "0.10–0.88"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（顺势收敛突破）· 闭柱确认量能 2.92x SMA20，按确认收盘价测量初始 T1 盈亏比 1.07，价格处于 EMA(50) 顺势侧。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 3 根右侧收盘确认拐点，连续 1 根收盘向上突破实际拟合边界。全部锚点可知后，最多等待 38 柱破位（自动 max(24, 结构跨度×2)）。突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩，至收敛顶点前停止结构观察。收盘回入结构记突破回落，越对侧边界才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "invalidated",
+    "stage": "invalidated",
+    "formation": "complete",
+    "pivotStrength": 3,
+    "guides": [
+      {
+        "role": "upper",
+        "points": [
+          {
+            "label": "upper",
+            "time": 1788343200000,
+            "value": 77341.98
+          },
+          {
+            "label": "upper",
+            "time": 1788530400000,
+            "value": 79116.21999999997
+          }
+        ]
+      },
+      {
+        "role": "lower",
+        "points": [
+          {
+            "label": "lower",
+            "time": 1788343200000,
+            "value": 76159.90066445182
+          },
+          {
+            "label": "lower",
+            "time": 1788530400000,
+            "value": 78688.47408637876
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1788436800000,
+        "knownAt": 1788440400000,
+        "value": 78616.5,
+        "boundary": 78229.09999999998
+      },
+      {
+        "kind": "retest",
+        "time": 1788526800000,
+        "knownAt": 1788530400000,
+        "value": 79342.9,
+        "boundary": 79082.09999999998
+      },
+      {
+        "kind": "failed-breakout",
+        "time": 1788530400000,
+        "knownAt": 1788534000000,
+        "value": 78874,
+        "boundary": 79116.21999999997
+      },
+      {
+        "kind": "invalidation",
+        "time": 1789041600000,
+        "knownAt": 1789045200000,
+        "value": 76859.9,
+        "boundary": 77354.74737541529
+      }
+    ],
+    "invalidatedAt": 1789045200000,
+    "resolution": {
+      "kind": "target-reached",
+      "time": 1788447600000,
+      "knownAt": 1788451200000,
+      "price": 80798.53479999996,
+      "targetIndex": 1
+    }
+  },
+  {
+    "id": "hscp:huzi-channel:1788130800000:1788166800000:1788177600000:1788202800000:1788228000000",
+    "family": "huzi-channel",
+    "name": "顺势共振 · 上升通道",
+    "direction": "bearish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "A",
+        "time": 1788130800000,
+        "value": 76947.2
+      },
+      {
+        "label": "B",
+        "time": 1788166800000,
+        "value": 78774
+      },
+      {
+        "label": "C",
+        "time": 1788177600000,
+        "value": 77663.1
+      },
+      {
+        "label": "D",
+        "time": 1788202800000,
+        "value": 79228.5
+      },
+      {
+        "label": "E",
+        "time": 1788228000000,
+        "value": 78150
+      }
+    ],
+    "confirmedAt": 1788253200000,
+    "zone": {
+      "low": 78369.1694808044,
+      "high": 78551.67348080438
+    },
+    "invalidation": 79910.602,
+    "targets": [
+      76179.12148080439,
+      75146.5185559415
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 0.8108691145575968,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 2.4080952736372954,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "末端 / 初始宽度",
+        "value": 1.0209243184788868,
+        "expected": "0.75–1.25"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（顺势收敛突破）· 闭柱确认量能 2.41x SMA20，按确认收盘价测量初始 T1 盈亏比 0.81，价格处于 EMA(50) 顺势侧。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 3 根右侧收盘确认拐点，连续 1 根收盘向下突破实际拟合边界。全部锚点可知后，最多等待 54 柱破位（自动 max(24, 结构跨度×2)）。突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩。收盘回入结构记突破回落，越对侧边界才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "invalidated",
+    "stage": "invalidated",
+    "formation": "complete",
+    "pivotStrength": 3,
+    "guides": [
+      {
+        "role": "upper",
+        "points": [
+          {
+            "label": "upper",
+            "time": 1788130800000,
+            "value": 78319.5
+          },
+          {
+            "label": "upper",
+            "time": 1788249600000,
+            "value": 79819.35
+          }
+        ]
+      },
+      {
+        "role": "lower",
+        "points": [
+          {
+            "label": "lower",
+            "time": 1788130800000,
+            "value": 76994.45831809871
+          },
+          {
+            "label": "lower",
+            "time": 1788249600000,
+            "value": 78460.42148080439
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1788249600000,
+        "knownAt": 1788253200000,
+        "value": 77850,
+        "boundary": 78460.42148080439
+      },
+      {
+        "kind": "invalidation",
+        "time": 1788444000000,
+        "knownAt": 1788447600000,
+        "value": 80508.4,
+        "boundary": 79910.602
+      }
+    ],
+    "invalidatedAt": 1788447600000
+  },
+  {
+    "id": "hscp:huzi-double:1787821200000:1787835600000:1787850000000",
+    "family": "huzi-double",
+    "name": "双背离共振 · M 双顶",
+    "direction": "bearish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "T1",
+        "time": 1787821200000,
+        "value": 80499.9
+      },
+      {
+        "label": "N",
+        "time": 1787835600000,
+        "value": 78864
+      },
+      {
+        "label": "T2",
+        "time": 1787850000000,
+        "value": 80845.1
+      }
+    ],
+    "confirmedAt": 1787932800000,
+    "zone": {
+      "low": 78791.66,
+      "high": 78936.34
+    },
+    "invalidation": 80917.44,
+    "targets": [
+      77055.5,
+      76280.837
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 0.4805554277652539,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 2.2437928525414277,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "RSI(14) 同侧极值背离差",
+        "value": 4.3485443183928965,
+        "expected": ">= 1.0"
+      },
+      {
+        "label": "双极值偏差 / 颈线高度",
+        "value": 0.19087641692010596,
+        "expected": "≤ 0.240"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（双背离极值反转）· 闭柱确认量能 2.24x SMA20，按确认收盘价测量初始 T1 盈亏比 0.48，价格处于 EMA(50) 顺势侧，同一对价格新极值具备 RSI(14) 与 MACD 线双背离。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 3 根右侧收盘确认拐点，连续 1 根收盘向下突破颈线。全部锚点可知后，最多等待 24 柱破位（自动 max(24, 结构跨度×2)）。突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩。收盘回入结构记突破回落，越极值才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "invalidated",
+    "stage": "invalidated",
+    "formation": "complete",
+    "pivotStrength": 3,
+    "guides": [
+      {
+        "role": "neckline",
+        "points": [
+          {
+            "label": "neckline",
+            "time": 1787821200000,
+            "value": 78864
+          },
+          {
+            "label": "neckline",
+            "time": 1787929200000,
+            "value": 78864
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1787929200000,
+        "knownAt": 1787932800000,
+        "value": 78309,
+        "boundary": 78864
+      },
+      {
+        "kind": "invalidation",
+        "time": 1788447600000,
+        "knownAt": 1788451200000,
+        "value": 81316.7,
+        "boundary": 80917.44
+      }
+    ],
+    "invalidatedAt": 1788451200000,
+    "divergences": [
+      {
+        "indicator": "rsi",
+        "series": "rsi",
+        "params": {
+          "period": 14
+        },
+        "points": [
+          {
+            "time": 1787850000000,
+            "value": 68.36462061251999
+          },
+          {
+            "time": 1787878800000,
+            "value": 64.01607629412709
+          }
+        ],
+        "minDelta": 1
+      },
+      {
+        "indicator": "macd",
+        "series": "dif",
+        "params": {
+          "fast": 12,
+          "slow": 26,
+          "signal": 9
+        },
+        "points": [
+          {
+            "time": 1787850000000,
+            "value": 409.3792800659867
+          },
+          {
+            "time": 1787878800000,
+            "value": 378.76513246275135
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "kind": "target-reached",
+      "time": 1788343200000,
+      "knownAt": 1788346800000,
+      "price": 76280.837,
+      "targetIndex": 1
+    }
+  },
+  {
+    "id": "hscp:huzi-channel:1786244400000:1786312800000:1786384800000:1786449600000:1786474800000",
+    "family": "huzi-channel",
+    "name": "顺势共振 · 下降通道",
+    "direction": "bullish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "A",
+        "time": 1786244400000,
+        "value": 64700
+      },
+      {
+        "label": "B",
+        "time": 1786312800000,
+        "value": 65482.7
+      },
+      {
+        "label": "C",
+        "time": 1786384800000,
+        "value": 63788
+      },
+      {
+        "label": "D",
+        "time": 1786449600000,
+        "value": 64470
+      },
+      {
+        "label": "E",
+        "time": 1786474800000,
+        "value": 63211.6
+      }
+    ],
+    "confirmedAt": 1786528800000,
+    "zone": {
+      "low": 63819.50600000001,
+      "high": 64001.194
+    },
+    "invalidation": 62793.00944440885,
+    "targets": [
+      66181.45000000001,
+      67482.00010000002
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 1.6389918063152167,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 1.5088418093391605,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "RSI(14) 同侧极值背离差",
+        "value": 9.834012455598725,
+        "expected": ">= 1.0"
+      },
+      {
+        "label": "末端 / 初始宽度",
+        "value": 0.8322283135604265,
+        "expected": "0.75–1.25"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（顺势收敛突破）· 闭柱确认量能 1.51x SMA20，按确认收盘价测量初始 T1 盈亏比 1.64，价格处于 EMA(50) 顺势侧，同一对价格新极值具备 RSI(14) 与 MACD 线双背离。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 6 根右侧收盘确认拐点，连续 1 根收盘向上突破实际拟合边界。全部锚点可知后，最多等待 128 柱破位（自动 max(24, 结构跨度×2)）。突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩。收盘回入结构记突破回落，越对侧边界才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "invalidated",
+    "stage": "invalidated",
+    "formation": "complete",
+    "pivotStrength": 6,
+    "guides": [
+      {
+        "role": "upper",
+        "points": [
+          {
+            "label": "upper",
+            "time": 1786244400000,
+            "value": 65989.05
+          },
+          {
+            "label": "upper",
+            "time": 1786543200000,
+            "value": 63777.100000000006
+          }
+        ]
+      },
+      {
+        "role": "lower",
+        "points": [
+          {
+            "label": "lower",
+            "time": 1786244400000,
+            "value": 64698.71675744955
+          },
+          {
+            "label": "lower",
+            "time": 1786543200000,
+            "value": 62767.51605254727
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1786525200000,
+        "knownAt": 1786528800000,
+        "value": 64077,
+        "boundary": 63910.350000000006
+      },
+      {
+        "kind": "failed-breakout",
+        "time": 1786543200000,
+        "knownAt": 1786546800000,
+        "value": 63344.4,
+        "boundary": 63777.100000000006
+      },
+      {
+        "kind": "invalidation",
+        "time": 1786698000000,
+        "knownAt": 1786701600000,
+        "value": 62763.9,
+        "boundary": 62793.00944440885
+      }
+    ],
+    "invalidatedAt": 1786701600000,
+    "divergences": [
+      {
+        "indicator": "rsi",
+        "series": "rsi",
+        "params": {
+          "period": 14
+        },
+        "points": [
+          {
+            "time": 1786384800000,
+            "value": 25.736539200105412
+          },
+          {
+            "time": 1786474800000,
+            "value": 35.570551655704136
+          }
+        ],
+        "minDelta": 1
+      },
+      {
+        "indicator": "macd",
+        "series": "dif",
+        "params": {
+          "fast": 12,
+          "slow": 26,
+          "signal": 9
+        },
+        "points": [
+          {
+            "time": 1786384800000,
+            "value": -261.06188201731857
+          },
+          {
+            "time": 1786474800000,
+            "value": -227.9729075917785
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hscp:huzi-wedge:1786312800000:1786384800000:1786449600000:1786474800000:1786500000000",
+    "family": "huzi-wedge",
+    "name": "顺势共振 · 下降楔形",
+    "direction": "bullish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "A",
+        "time": 1786312800000,
+        "value": 65482.7
+      },
+      {
+        "label": "B",
+        "time": 1786384800000,
+        "value": 63788
+      },
+      {
+        "label": "C",
+        "time": 1786449600000,
+        "value": 64470
+      },
+      {
+        "label": "D",
+        "time": 1786474800000,
+        "value": 63211.6
+      },
+      {
+        "label": "E",
+        "time": 1786500000000,
+        "value": 63886
+      }
+    ],
+    "confirmedAt": 1786528800000,
+    "zone": {
+      "low": 63656.28182872929,
+      "high": 63837.969828729285
+    },
+    "invalidation": 62797.972,
+    "targets": [
+      66018.22582872928,
+      67217.90339088398
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 1.517735208868986,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 1.5088418093391605,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "RSI(14) 同侧极值背离差",
+        "value": 9.834012455598725,
+        "expected": ">= 1.0"
+      },
+      {
+        "label": "末端 / 初始宽度",
+        "value": 0.7193042089873622,
+        "expected": "0.10–0.88"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（顺势收敛突破）· 闭柱确认量能 1.51x SMA20，按确认收盘价测量初始 T1 盈亏比 1.52，价格处于 EMA(50) 顺势侧，同一对价格新极值具备 RSI(14) 与 MACD 线双背离。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 6 根右侧收盘确认拐点，连续 1 根收盘向上突破实际拟合边界。全部锚点可知后，最多等待 104 柱破位（自动 max(24, 结构跨度×2)）。突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩，至收敛顶点前停止结构观察。收盘回入结构记突破回落，越对侧边界才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "invalidated",
+    "stage": "invalidated",
+    "formation": "complete",
+    "pivotStrength": 6,
+    "guides": [
+      {
+        "role": "upper",
+        "points": [
+          {
+            "label": "upper",
+            "time": 1786312800000,
+            "value": 65508.52845303867
+          },
+          {
+            "label": "upper",
+            "time": 1786543200000,
+            "value": 63597.8544198895
+          }
+        ]
+      },
+      {
+        "role": "lower",
+        "points": [
+          {
+            "label": "lower",
+            "time": 1786312800000,
+            "value": 64249.12
+          },
+          {
+            "label": "lower",
+            "time": 1786543200000,
+            "value": 62773.536
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1786525200000,
+        "knownAt": 1786528800000,
+        "value": 64077,
+        "boundary": 63747.12582872929
+      },
+      {
+        "kind": "failed-breakout",
+        "time": 1786543200000,
+        "knownAt": 1786546800000,
+        "value": 63344.4,
+        "boundary": 63597.8544198895
+      },
+      {
+        "kind": "invalidation",
+        "time": 1786698000000,
+        "knownAt": 1786701600000,
+        "value": 62763.9,
+        "boundary": 62797.972
+      }
+    ],
+    "invalidatedAt": 1786701600000,
+    "divergences": [
+      {
+        "indicator": "rsi",
+        "series": "rsi",
+        "params": {
+          "period": 14
+        },
+        "points": [
+          {
+            "time": 1786384800000,
+            "value": 25.736539200105412
+          },
+          {
+            "time": 1786474800000,
+            "value": 35.570551655704136
+          }
+        ],
+        "minDelta": 1
+      },
+      {
+        "indicator": "macd",
+        "series": "dif",
+        "params": {
+          "fast": 12,
+          "slow": 26,
+          "signal": 9
+        },
+        "points": [
+          {
+            "time": 1786384800000,
+            "value": -261.06188201731857
+          },
+          {
+            "time": 1786474800000,
+            "value": -227.9729075917785
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hscp:huzi-double:1786104000000:1786244400000:1786312800000",
+    "family": "huzi-double",
+    "name": "双背离共振 · M 双顶",
+    "direction": "bearish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "T1",
+        "time": 1786104000000,
+        "value": 65358
+      },
+      {
+        "label": "N",
+        "time": 1786244400000,
+        "value": 64700
+      },
+      {
+        "label": "T2",
+        "time": 1786312800000,
+        "value": 65482.7
+      }
+    ],
+    "confirmedAt": 1786370400000,
+    "zone": {
+      "low": 64671.186,
+      "high": 64728.814
+    },
+    "invalidation": 65511.513999999996,
+    "targets": [
+      63979.65,
+      63637.24710000001
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 0.5666210547200148,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 3.223477986896249,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "RSI(14) 同侧极值背离差",
+        "value": 22.521815237377638,
+        "expected": ">= 1.0"
+      },
+      {
+        "label": "双极值偏差 / 颈线高度",
+        "value": 0.17311029360727054,
+        "expected": "≤ 0.240"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（双背离极值反转）· 闭柱确认量能 3.22x SMA20，按确认收盘价测量初始 T1 盈亏比 0.57，价格处于 EMA(50) 顺势侧，同一对价格新极值具备 RSI(14) 与 MACD 线双背离。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 12 根右侧收盘确认拐点，连续 1 根收盘向下突破颈线。全部锚点可知后，最多等待 116 柱破位（自动 max(24, 结构跨度×2)）。突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩。收盘回入结构记突破回落，越极值才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "invalidated",
+    "stage": "invalidated",
+    "formation": "complete",
+    "pivotStrength": 12,
+    "guides": [
+      {
+        "role": "neckline",
+        "points": [
+          {
+            "label": "neckline",
+            "time": 1786104000000,
+            "value": 64700
+          },
+          {
+            "label": "neckline",
+            "time": 1786366800000,
+            "value": 64700
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1786366800000,
+        "knownAt": 1786370400000,
+        "value": 64533.7,
+        "boundary": 64700
+      },
+      {
+        "kind": "invalidation",
+        "time": 1787148000000,
+        "knownAt": 1787151600000,
+        "value": 65895.6,
+        "boundary": 65511.513999999996
+      }
+    ],
+    "invalidatedAt": 1787151600000,
+    "divergences": [
+      {
+        "indicator": "rsi",
+        "series": "rsi",
+        "params": {
+          "period": 14
+        },
+        "points": [
+          {
+            "time": 1786104000000,
+            "value": 73.99744775759038
+          },
+          {
+            "time": 1786312800000,
+            "value": 51.47563252021274
+          }
+        ],
+        "minDelta": 1
+      },
+      {
+        "indicator": "macd",
+        "series": "dif",
+        "params": {
+          "fast": 12,
+          "slow": 26,
+          "signal": 9
+        },
+        "points": [
+          {
+            "time": 1786104000000,
+            "value": 113.53135837356967
+          },
+          {
+            "time": 1786312800000,
+            "value": 62.87835124548292
+          }
+        ]
+      }
+    ],
+    "resolution": {
+      "kind": "target-reached",
+      "time": 1786460400000,
+      "knownAt": 1786464000000,
+      "price": 63637.24710000001,
+      "targetIndex": 1
+    }
+  },
+  {
+    "id": "hscp:huzi-wedge:1785934800000:1785960000000:1786021200000:1786104000000:1786244400000:1786312800000:1786320000000",
+    "family": "huzi-wedge",
+    "name": "顺势共振 · 上升楔形",
+    "direction": "bearish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "A",
+        "time": 1785934800000,
+        "value": 63847
+      },
+      {
+        "label": "B",
+        "time": 1785960000000,
+        "value": 65022
+      },
+      {
+        "label": "C",
+        "time": 1786021200000,
+        "value": 64111
+      },
+      {
+        "label": "D",
+        "time": 1786104000000,
+        "value": 65358
+      },
+      {
+        "label": "E",
+        "time": 1786244400000,
+        "value": 64700
+      },
+      {
+        "label": "F",
+        "time": 1786312800000,
+        "value": 65482.7
+      },
+      {
+        "label": "G",
+        "time": 1786320000000,
+        "value": 64794.4
+      }
+    ],
+    "confirmedAt": 1786366800000,
+    "zone": {
+      "low": 64882.39740938062,
+      "high": 65013.25340938062
+    },
+    "invalidation": 65651.19614936848,
+    "targets": [
+      63312.12540938062,
+      62368.94951237784
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 1.8774533398946947,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 1.8953816628395646,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "RSI(14) 同侧极值背离差",
+        "value": 22.521815237377638,
+        "expected": ">= 1.0"
+      },
+      {
+        "label": "末端 / 初始宽度",
+        "value": 0.5890597632331289,
+        "expected": "0.10–0.88"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（顺势收敛突破）· 闭柱确认量能 1.90x SMA20，按确认收盘价测量初始 T1 盈亏比 1.88，价格处于 EMA(50) 顺势侧，同一对价格新极值具备 RSI(14) 与 MACD 线双背离。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 12 根右侧收盘确认拐点，连续 1 根收盘向下突破实际拟合边界。全部锚点可知后，最多等待 214 柱破位（自动 max(24, 结构跨度×2)）。7 个连续边界触点；突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩，至收敛顶点前停止结构观察。收盘回入结构记突破回落，越对侧边界才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "invalidated",
+    "stage": "invalidated",
+    "formation": "complete",
+    "pivotStrength": 12,
+    "guides": [
+      {
+        "role": "upper",
+        "points": [
+          {
+            "label": "upper",
+            "time": 1785934800000,
+            "value": 65048.10183964855
+          },
+          {
+            "label": "upper",
+            "time": 1786363200000,
+            "value": 65585.76814936848
+          }
+        ]
+      },
+      {
+        "role": "lower",
+        "points": [
+          {
+            "label": "lower",
+            "time": 1785934800000,
+            "value": 63873.1949272757
+          },
+          {
+            "label": "lower",
+            "time": 1786363200000,
+            "value": 64947.82540938062
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1786363200000,
+        "knownAt": 1786366800000,
+        "value": 64838.3,
+        "boundary": 64947.82540938062
+      },
+      {
+        "kind": "invalidation",
+        "time": 1787148000000,
+        "knownAt": 1787151600000,
+        "value": 65895.6,
+        "boundary": 65651.19614936848
+      }
+    ],
+    "invalidatedAt": 1787151600000,
+    "divergences": [
+      {
+        "indicator": "rsi",
+        "series": "rsi",
+        "params": {
+          "period": 14
+        },
+        "points": [
+          {
+            "time": 1786104000000,
+            "value": 73.99744775759038
+          },
+          {
+            "time": 1786312800000,
+            "value": 51.47563252021274
+          }
+        ],
+        "minDelta": 1
+      },
+      {
+        "indicator": "macd",
+        "series": "dif",
+        "params": {
+          "fast": 12,
+          "slow": 26,
+          "signal": 9
+        },
+        "points": [
+          {
+            "time": 1786104000000,
+            "value": 113.53135837356967
+          },
+          {
+            "time": 1786312800000,
+            "value": 62.87835124548292
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hscp:huzi-channel:1785934800000:1785960000000:1786021200000:1786104000000:1786244400000",
+    "family": "huzi-channel",
+    "name": "顺势共振 · 上升通道",
+    "direction": "bearish",
+    "ruleVersion": "confluence-hscp/2.0-evidence",
+    "points": [
+      {
+        "label": "A",
+        "time": 1785934800000,
+        "value": 63847
+      },
+      {
+        "label": "B",
+        "time": 1785960000000,
+        "value": 65022
+      },
+      {
+        "label": "C",
+        "time": 1786021200000,
+        "value": 64111
+      },
+      {
+        "label": "D",
+        "time": 1786104000000,
+        "value": 65358
+      },
+      {
+        "label": "E",
+        "time": 1786244400000,
+        "value": 64700
+      }
+    ],
+    "confirmedAt": 1786320000000,
+    "zone": {
+      "low": 64840.79628977657,
+      "high": 64961.67628977657
+    },
+    "invalidation": 65914.04000000001,
+    "targets": [
+      63390.23628977657,
+      62477.10191685849
+    ],
+    "ratios": [
+      {
+        "label": "初始盈亏比 R:R",
+        "value": 1.4122607721205698,
+        "expected": ">= 0.45"
+      },
+      {
+        "label": "确认柱量能 / SMA20",
+        "value": 2.1794439896194744,
+        "expected": ">= 1.20x"
+      },
+      {
+        "label": "末端 / 初始宽度",
+        "value": 0.8882542054351568,
+        "expected": "0.75–1.25"
+      }
+    ],
+    "description": "HSCP 实验性量价共振（顺势收敛突破）· 闭柱确认量能 2.18x SMA20，按确认收盘价测量初始 T1 盈亏比 1.41，价格处于 EMA(50) 顺势侧。目标为几何参考；尚不代表入场成交、分批止盈或追踪止损策略，收益需独立含成本回测。 胡子图表结构 · 12 根右侧收盘确认拐点，连续 1 根收盘向下突破实际拟合边界。全部锚点可知后，最多等待 172 柱破位（自动 max(24, 结构跨度×2)）。突破价带固定保留；脱离边界后在 30 柱内按原拟合线观察回踩。收盘回入结构记突破回落，越对侧边界才失效。目标按结构高度投射；几何阈值为工程解释；容差、确认柱数与窗口可调，未使用成交量或未平仓量确认。",
+    "status": "invalidated",
+    "stage": "invalidated",
+    "formation": "complete",
+    "pivotStrength": 12,
+    "guides": [
+      {
+        "role": "upper",
+        "points": [
+          {
+            "label": "upper",
+            "time": 1785934800000,
+            "value": 64963.2
+          },
+          {
+            "label": "upper",
+            "time": 1786323600000,
+            "value": 65870.4
+          }
+        ]
+      },
+      {
+        "role": "lower",
+        "points": [
+          {
+            "label": "lower",
+            "time": 1785934800000,
+            "value": 63858.711577522
+          },
+          {
+            "label": "lower",
+            "time": 1786323600000,
+            "value": 64920.906567366284
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "kind": "breakout",
+        "time": 1786316400000,
+        "knownAt": 1786320000000,
+        "value": 64867.8,
+        "boundary": 64901.23628977657
+      },
+      {
+        "kind": "failed-breakout",
+        "time": 1786323600000,
+        "knownAt": 1786327200000,
+        "value": 65172.9,
+        "boundary": 64920.906567366284
+      },
+      {
+        "kind": "invalidation",
+        "time": 1787151600000,
+        "knownAt": 1787155200000,
+        "value": 68523.7,
+        "boundary": 65914.04000000001
+      }
+    ],
+    "invalidatedAt": 1787155200000
+  }
+]

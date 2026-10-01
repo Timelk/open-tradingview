@@ -1,0 +1,244 @@
+/* 工具风基座：分层表面、发丝分隔线、等宽数字。颜色全部来自主题 token，
+   由 lib/ui/theme.ts 按图表外观预设在运行时写入 :root。 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Theme base (graphite defaults; applyUiTheme overwrites these inline).
+     Layers: page < panel < raised; sunken wells for inputs. */
+  --bg: #0f1012;
+  --bg-panel: #16171a;
+  --surface-raised: #1e1f23;
+  --surface-sunken: #111214;
+  --bg-hover: rgba(255, 255, 255, 0.055);
+  --bg-active: rgba(255, 255, 255, 0.095);
+  --line: rgba(255, 255, 255, 0.075);
+  --line-strong: rgba(255, 255, 255, 0.13);
+  --text-strong: #f4f5f7;
+  --text: #dadce2;
+  --text-dim: #9a9ea8;
+  --text-muted: #6c707a;
+  --accent: #7fa7ff;
+  --accent-strong: #a9c4ff;
+  --on-accent: #0b1122;
+  --up: #a8ba96;
+  --down: #c07c80;
+  --warn: #e0b261;
+  --focus: #8fb3ff;
+  --ink: #ffffff;
+  --shadow-strength: 1;
+  --scrim: rgba(5, 6, 8, 0.62);
+  /* Derived tints: one formula for every theme. */
+  --accent-soft: color-mix(in srgb, var(--accent) 15%, transparent);
+  --accent-line: color-mix(in srgb, var(--accent) 50%, transparent);
+  --up-soft: color-mix(in srgb, var(--up) 14%, transparent);
+  --up-line: color-mix(in srgb, var(--up) 45%, transparent);
+  --down-soft: color-mix(in srgb, var(--down) 14%, transparent);
+  --down-line: color-mix(in srgb, var(--down) 45%, transparent);
+  --warn-soft: color-mix(in srgb, var(--warn) 14%, transparent);
+  --warn-line: color-mix(in srgb, var(--warn) 45%, transparent);
+  --selected: var(--accent-soft);
+  --scrollbar: color-mix(in srgb, var(--ink) 16%, transparent);
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / calc(0.28 * var(--shadow-strength)));
+  --shadow-md: 0 12px 32px -12px rgb(0 0 0 / calc(0.6 * var(--shadow-strength))), 0 2px 6px rgb(0 0 0 / calc(0.18 * var(--shadow-strength)));
+  --shadow-lg: 0 32px 80px -20px rgb(0 0 0 / calc(0.72 * var(--shadow-strength))), 0 6px 18px rgb(0 0 0 / calc(0.2 * var(--shadow-strength)));
+  /* Shape, type and motion scales. */
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 7px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+  --font: "IBM Plex Sans Variable", "IBM Plex Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --mono: "IBM Plex Mono", "JetBrains Mono", ui-monospace, monospace;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 13px;
+  overflow: hidden;
+}
+
+#app {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.num {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: var(--font);
+  font-size: 12px;
+  line-height: 1;
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid transparent;
+  padding: 0 10px;
+  min-height: 28px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+button:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+button.active {
+  color: var(--accent-strong);
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+}
+
+:root {
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "cv11", "ss01";
+  --select-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'%3E%3Cpath d='M1.5 1.25L5 4.75L8.5 1.25' stroke='%239a9ea8' stroke-width='1.35' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+::selection { background: color-mix(in srgb, var(--accent) 32%, transparent); color: var(--text-strong); }
+#app { height: 100dvh; }
+button,select,input { outline: none; }
+button:focus-visible,select:focus-visible,input:focus-visible { border-color: var(--focus); outline: 1px solid var(--focus); outline-offset: -1px; }
+button:disabled { opacity: .4; cursor: not-allowed; }
+select,
+#app select,
+dialog select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--surface-sunken);
+  background-image: var(--select-chevron) !important;
+  background-repeat: no-repeat !important;
+  background-position: right 8px center !important;
+  background-size: 10px 6px !important;
+  color: var(--text);
+  border: 1px solid var(--line-strong);
+  height: 28px;
+  min-height: 28px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 9px;
+  padding-right: 25px !important;
+  font: 500 12px/normal var(--font);
+  line-height: normal !important;
+  cursor: pointer;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+select:hover,
+#app select:hover,
+dialog select:hover { border-color: color-mix(in srgb, var(--ink) 24%, transparent); }
+button { transition: background-color 100ms, color 100ms; }
+
+.sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
+* { scrollbar-width: thin; scrollbar-color: var(--scrollbar) transparent; }
+@media(prefers-reduced-motion:reduce) { button { transition:none; } }
+
+/* Pane controls stay outside Svelte's reactive render loop. */
+.pane-controls { position:absolute; inset:0; pointer-events:none; }
+.pane-toolbar { position:absolute; display:inline-flex; align-items:center; height:24px; padding:2px; gap:2px; pointer-events:auto; background:var(--chart-glass-bg,var(--bg)); border:1px solid var(--chart-glass-border,var(--line)); border-radius:var(--radius-sm); backdrop-filter:var(--chart-glass-blur,blur(10px) saturate(135%)); -webkit-backdrop-filter:var(--chart-glass-blur,blur(10px) saturate(135%)); box-shadow:var(--chart-glass-shadow,none); }
+.pane-toolbar button { display:inline-flex; align-items:center; justify-content:center; min-width:28px; height:18px; min-height:18px; padding:0 6px; border-radius:var(--radius-xs); font:500 11px/1 var(--font); color:var(--chart-glass-text-muted,var(--text-dim)); background:transparent; border:0; }
+.pane-toolbar button[data-pane-action="maximize"] { min-width:20px; width:20px; padding:0; }
+.pane-toolbar button[data-pane-action="maximize"] svg { display:block; flex-shrink:0; }
+.pane-toolbar button:hover,.pane-toolbar button:focus-visible { color:var(--chart-glass-text,var(--text)); background:var(--chart-glass-badge-bg,var(--bg-hover)); }
+.pane-toolbar .manual { color:var(--accent); font-weight:600; }
+/* Chart-first chrome: pane tools fade in while the chart is hovered or
+   focused, and stay visible when they carry state (a manual price scale). */
+@media(hover:hover) and (pointer:fine){
+  .pane-toolbar { opacity:0; transform:translateY(-2px); transition:opacity 150ms var(--ease-out,ease-out),transform 150ms var(--ease-out,ease-out); }
+  .chart-host:hover .pane-toolbar,.chart-host:focus-visible .pane-toolbar,.pane-toolbar:focus-within,.pane-toolbar:has(.manual) { opacity:1; transform:none; }
+}
+@media(prefers-reduced-motion:reduce){ .pane-toolbar { transition:none; transform:none; } }
+.pane-separator { position:absolute; left:0; right:0; height:12px; transform:translateY(-50%); pointer-events:auto; cursor:ns-resize; z-index:1; outline:none; touch-action:none; }
+.pane-separator::before { content:""; position:absolute; top:5px; left:0; right:0; height:1px; background:var(--line); }
+.pane-separator::after { content:""; position:absolute; top:3px; left:calc(50% - 14px); width:28px; height:5px; border-top:1px solid var(--text-muted); border-bottom:1px solid var(--text-muted); background:var(--bg); opacity:.65; border-radius:1px; }
+.pane-separator:hover::before,.pane-separator:focus-visible::before,.pane-separator.dragging::before { background:var(--accent); height:2px; }
+.pane-separator:hover::after,.pane-separator:focus-visible::after,.pane-separator.dragging::after { border-color:var(--accent); opacity:1; }
+.chart-host.resizing-pane { user-select:none; }
+@media(pointer:coarse) { .pane-separator { height:24px; } .pane-separator::before { top:11px; } .pane-separator::after { top:9px; } .pane-toolbar { height:36px; padding:3px; } .pane-toolbar button { min-width:34px; height:28px; min-height:28px; } .pane-toolbar button[data-pane-action="maximize"] { width:28px; min-width:28px; } }
+
+
+/* Brief visual feedback; input geometry and chart dragging never use CSS easing. */
+:root { --ease-out: cubic-bezier(.16,1,.3,1); --ease-in-out: cubic-bezier(.65,0,.35,1); }
+button { transition:background-color 110ms var(--ease-out),color 110ms var(--ease-out),border-color 110ms var(--ease-out); }
+.tool-main:active,.right-rail button:active,.object-actions>button:active { scale:.96; }
+.tool-main,.right-rail button,.object-actions>button { transition:scale 100ms var(--ease-out),background-color 110ms var(--ease-out),color 110ms var(--ease-out); }
+.pane-separator::before,.pane-separator::after { transition:opacity 100ms ease-out,background-color 100ms ease-out,border-color 100ms ease-out; }
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after { transition-duration:0ms!important; animation-duration:0ms!important; }
+  .tool-main:active,.right-rail button:active,.object-actions>button:active { scale:1; }
+}
+.chart-host > .chart-axes { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+.chart-host.tool-drop-target::after { content:'释放放置工具'; position:absolute; inset:0; z-index:4; border:1px solid var(--accent); background:color-mix(in srgb,var(--accent) 4%,transparent); padding:34px 12px; color:var(--accent-strong); font-size:11px; pointer-events:none; }
+
+/* Shared UI roles. Chart geometry remains owned by the renderer. */
+:root{--radius-control:5px;--radius-popup:8px;--motion-fast:120ms;--motion-enter:180ms;--motion-exit:120ms;--control-height:32px}
+button,input,select{border-radius:var(--radius-control)}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{border-color:var(--focus);outline:1.5px solid var(--focus);outline-offset:-1px}
+input,select{color:var(--text)}
+dialog{border-radius:var(--radius-lg);background:var(--surface-raised);color:var(--text);border:1px solid var(--line-strong);box-shadow:var(--shadow-lg)}
+dialog::backdrop{background:var(--scrim);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+p{line-height:1.65}h1,h2,h3{text-wrap:balance}
+.skip-chart{position:fixed;left:12px;top:-80px;z-index:200;background:var(--accent);padding:10px;color:var(--on-accent);border-radius:var(--radius-sm)}.skip-chart:focus{top:10px}
+[data-ui-motion=off] *,[data-ui-motion=reduced] *{animation-duration:0ms!important;transition-duration:0ms!important}
+[data-ui-motion=off] button:active,[data-ui-motion=reduced] button:active{scale:1}
+@media(pointer:coarse){button,select,summary{min-height:44px}.pane-toolbar{height:40px;padding:3px}.pane-toolbar button{min-width:38px;height:32px;min-height:32px}.pane-toolbar button[data-pane-action="maximize"]{width:32px;min-width:32px}input:not([type=checkbox]):not([type=range]),select{font-size:16px!important}}
+@media(max-width:767px){input:not([type=checkbox]):not([type=range]),select{font-size:16px!important}}
+.dock-tabs{position:relative}.ui-tab-indicator{position:absolute;left:0;bottom:0;height:2px;width:1px;transform-origin:left center;background:var(--accent);pointer-events:none;transition:transform 140ms var(--ease-out);z-index:2}
+#app p{font-size:12px}
+#app .dock-header,#app .dock-tabs{height:28px}#app .dock-tabs button{font-size:11px;min-height:28px;border-bottom-color:transparent}#app .dock-settings,#app .dock-close{width:26px;height:26px}#app .dock-surface{padding-top:28px}
+#app .mobile-header{height:44px!important}#app .mobile-header .dock-tabs,#app .mobile-header button{min-height:44px;height:44px}#app .mobile-surface{padding-top:44px}#app .mobile-header .dock-close{width:44px}
+#app .drawing-rail{width:42px;flex-basis:42px}#app .tool-main{width:32px;height:32px}#app .rail-section{margin-inline:0}#app .rail-section>button{width:32px;min-height:30px;height:30px}#app .tool-group{height:34px}
+#app .tool-popup{border-radius:var(--radius-popup)}#app .popup-heading>button{width:32px;height:32px}#app .tool-options button{min-height:28px;font-size:12px}
+
+@media(pointer:coarse){#app .drawing-rail{width:52px;flex-basis:52px}#app .tool-group{height:48px}#app .tool-main{width:44px;height:44px}#app .coarse .select-symbol,#app .coarse .watch-row{min-height:44px}}
+@media(max-height:480px) and (max-width:1000px){#app .toolbar{height:44px;min-height:44px}#app .quote-strip{height:36px;min-height:36px;flex-wrap:nowrap}#app .quote-strip .last{font-size:16px}}
+
+/* Compact terminal density: change spacing, never scale the chart or text. */
+.workspace-tooltip{position:fixed;inset:auto;margin:0;display:none;max-width:min(300px,calc(100vw - 16px));padding:6px 9px;border:1px solid var(--line-strong);border-radius:var(--radius-sm);background:var(--surface-raised);color:var(--text-strong);box-shadow:var(--shadow-md);font:12px/1.55 var(--font);white-space:normal;overflow-wrap:anywhere;z-index:1000;pointer-events:auto}
+.workspace-tooltip::backdrop{display:none}
+@media(pointer:fine){
+ #app .toolbar{height:40px;min-height:40px;padding:0 12px;gap:6px}
+ #app .toolbar button,#app .toolbar select{min-height:28px;height:28px;padding-block:0}
+ #app .toolbar .intervals>button,#app .toolbar .intervals .interval-menu-trigger{min-height:24px;height:24px}
+ #app .quote-strip{height:36px;min-height:36px;padding:0 12px;gap:12px;flex-wrap:nowrap}
+ #app .quote-strip .last{font-size:16px}#app .quote-strip .ohlc{flex-basis:auto;flex:1;min-width:0;height:20px;line-height:20px}
+ #app .chart-toolbar{gap:4px}
+ #app .chart-toolbar button{min-height:24px;height:24px;padding:0 7px}
+ #app .right-rail{width:34px;flex-basis:34px;gap:3px;padding-top:4px}
+ #app .right-rail button{width:30px;height:30px}#app .right-rail svg{width:18px;height:18px}
+ #app .pane-toolbar{height:24px;min-height:24px;padding:2px}#app .pane-toolbar button{height:18px;min-height:18px;min-width:28px;padding:0 6px}#app .pane-toolbar button[data-pane-action="maximize"]{min-width:20px;width:20px;padding:0}
+ #app .tool-main svg,#app .rail-section>button svg{width:18px;height:18px}
+ #app .popup-heading{padding:7px 10px}#app .tool-popup .tool-search{height:28px;padding:4px 8px}
+ #app .compact .watch-row,#app .compact .select-symbol{height:28px;min-height:28px}
+ #app .compact .tree-row,#app .compact .study-row{min-height:27px}
+ #app dialog>header{padding:12px 16px}#app dialog h2{font-size:18px}
+ #app .layout-options{padding-inline:16px}#app .layout-options section{padding-top:10px;margin-top:8px}
+ #app .preset-grid>button{padding:7px}#app .layout-preview{height:36px}#app .named-row input,#app .named-row select,#app .named-row button,#app .named-actions button{height:28px;min-height:28px;padding-block:0;font-size:12px}
+ #app .panel-placement select{padding:0 24px 0 8px}#app .size-row,#app .density-row{min-height:30px}
+ #app .command-list button{min-height:32px;padding:5px 10px}#app .command-list small{font-size:11px}
+ #app .statusbar{min-height:24px;height:24px}
+}
+
+
+@media(pointer:coarse){#app .right-rail{width:44px;flex-basis:44px}#app .right-rail button{width:42px;height:44px;min-height:44px}#app .rail-section>button{width:44px;height:44px;min-height:44px}}
+
+@media(pointer:fine){#app .tool-popup button{border-radius:var(--radius-sm)}}

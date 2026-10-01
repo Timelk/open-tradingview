@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-01",
+  "viewport_css_pixels": [
+    1600,
+    1000
+  ],
+  "source": "Direct browser screenshots of running native analysis scope",
+  "simulated_images": [
+    "million-candles-simulation.png"
+  ],
+  "images": [
+    {
+      "file": "ai-agent-connection.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 273165,
+      "sha256": "925e75aca508153511ad771b6c93ba25a0d3c21b2af99d9f488565891667342f"
+    },
+    {
+      "file": "ai-agent.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 262182,
+      "sha256": "81325072688fd1be3ec6cbdc317a9252c86fc7916b56267a0a00b4031b1463d7"
+    },
+    {
+      "file": "indicator-library.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 339270,
+      "sha256": "dc95702c94138adf43ea8384390edfb0b8f2ebe84c831bd52ef73d320e41631e"
+    },
+    {
+      "file": "million-candles-simulation.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 247184,
+      "sha256": "920b7453b1449ab77649eee27949d6af62b2080e7fa2bcf4d7e12ab37e27c435"
+    },
+    {
+      "file": "pattern-analysis.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 402051,
+      "sha256": "7113d35160dbfa681325c9713907b688a3b583ef26ae397151a5a0110ea52daa"
+    },
+    {
+      "file": "structure-library.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 335450,
+      "sha256": "54f75b95ee9c449489c1384bea3e53ceb44affb749e206df4c8c5c8744b9be87"
+    },
+    {
+      "file": "structure-volume.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 359333,
+      "sha256": "b321470603969abf03002167268d97f346bc2256d0d18d7b06258051e4cbc857"
+    },
+    {
+      "file": "symbol-search.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 306109,
+      "sha256": "400db970c92ef79eeaecc14f2e8159f3079f44cbb7914ae960918eb45cfdd129"
+    },
+    {
+      "file": "three-pattern-families.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 291355,
+      "sha256": "3ccd57804285723b46f5bc8f21af37191b883192bcf6b8447d7f33485e262856"
+    },
+    {
+      "file": "workspace.png",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 238950,
+      "sha256": "d1a84aec1420ddc3b9bd40f2b382db2f7956475b9cbb939ea85501ae44523ca1"
+    }
+  ]
+}
