@@ -1,18 +1,29 @@
 # open-tradingview
 
+<p align="center">
+  <a href="LICENSE"><img alt="MIT License" src="docs/assets/badges/license.svg"></a>
+  <a href="https://nodejs.org/"><img alt="Node.js 24 or newer" src="docs/assets/badges/node.svg"></a>
+  <a href="https://pnpm.io/"><img alt="pnpm 10.33.0" src="docs/assets/badges/pnpm.svg"></a>
+  <a href="https://svelte.dev/"><img alt="Svelte 5" src="docs/assets/badges/svelte.svg"></a>
+  <a href="https://www.typescriptlang.org/"><img alt="TypeScript" src="docs/assets/badges/typescript.svg"></a>
+  <a href="docs/architecture/agent-bridge.md"><img alt="MCP AI Agent bridge" src="docs/assets/badges/mcp.svg"></a>
+</p>
+
 ### 流畅看盘，清晰观察市场结构，让自己的 AI Agent 参与分析。
 
 一个面向加密货币的本地图表与技术分析工作台。自研 WebGL 渲染连接实时 K 线、三类形态、技术指标、结构量价与 AI Agent。
 
-**可免费本地运行 · 公开行情无需 API Key · 中文 / English**
+**早期预览 · 可免费本地运行 · 公开行情无需 API Key**
 
-早期预览 · MIT 许可 · 持续公开开发
+[**快速开始**](#快速开始) · [功能一览](#从图表出发) · [AI Agent](#让自己的-ai-agent-理解和标注图表) · [English](README.md) · [开发指南](docs/developer-guide.md)
 
-[English](README.md) · [快速开始](#快速开始) · [三类形态](#三类形态同图观察) · [AI Agent](#让自己的-ai-agent-理解和标注图表) · [开发指南](docs/developer-guide.md)
+![真实图表缩放、平移与原生指标预览](docs/assets/motion/chart-demo.gif)
 
-![真实加密货币工作台：均线、布林带、成交量、MACD 与 RSI](docs/assets/screenshots/native-2026-10-01/workspace.png)
+*8 秒真实操作：缩放、平移、预览布林带。场景使用 Binance BTCUSDT 永续、1 小时行情，录制于 2026 年 10 月 1 日。*
 
-*截图来自 2026 年 10 月 1 日实际运行的应用。行情场景使用 Binance 公开数据；另行标注的百万根场景使用模拟数据。*
+[完整工作台截图](docs/assets/screenshots/native-2026-10-01/workspace.png) · [视频版本](docs/assets/motion/chart-demo.mp4) · [录制说明](docs/assets/motion/chart-demo.md)
+
+行情截图使用 Binance 公开数据；另行标注的百万根场景使用模拟数据。
 
 ## 从图表出发
 

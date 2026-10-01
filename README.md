@@ -1,18 +1,29 @@
 # open-tradingview
 
+<p align="center">
+  <a href="LICENSE"><img alt="MIT License" src="docs/assets/badges/license.svg"></a>
+  <a href="https://nodejs.org/"><img alt="Node.js 24 or newer" src="docs/assets/badges/node.svg"></a>
+  <a href="https://pnpm.io/"><img alt="pnpm 10.33.0" src="docs/assets/badges/pnpm.svg"></a>
+  <a href="https://svelte.dev/"><img alt="Svelte 5" src="docs/assets/badges/svelte.svg"></a>
+  <a href="https://www.typescriptlang.org/"><img alt="TypeScript" src="docs/assets/badges/typescript.svg"></a>
+  <a href="docs/architecture/agent-bridge.md"><img alt="MCP AI Agent bridge" src="docs/assets/badges/mcp.svg"></a>
+</p>
+
 ### Fluid charts. Visible market structure. Your own AI Agent.
 
 A local crypto charting and analysis workspace with a custom WebGL renderer, three pattern families, technical indicators, structure and volume analysis, and an MCP bridge for your AI agent.
 
-**Free to run locally · Public market data without an API key · English / 中文**
+**Early preview · Free to run locally · Public market data without an API key**
 
-Early preview · MIT licensed · Built in the open
+[**Quick start**](#quick-start) · [Feature tour](#start-with-the-chart) · [AI Agent](#let-your-ai-agent-work-on-the-chart) · [中文](README.zh-CN.md) · [Developer guide](docs/developer-guide.md)
 
-[中文](README.zh-CN.md) · [Quick start](#quick-start) · [Patterns](#three-pattern-families-one-chart) · [AI Agent](#let-your-ai-agent-work-on-the-chart) · [Developer guide](docs/developer-guide.md)
+![Real chart zoom, pan and native indicator preview](docs/assets/motion/chart-demo.gif)
 
-![Live crypto workspace with moving averages, Bollinger Bands, volume, MACD and RSI](docs/assets/screenshots/native-2026-10-01/workspace.png)
+*Eight seconds of actual chart interaction: zoom, pan and preview Bollinger Bands on Binance BTCUSDT perpetual, 1h. Captured October 1, 2026.*
 
-*Actual application screenshots, captured October 1, 2026. Market views use Binance public data; the separately labeled million-candle view uses simulation.*
+[Full workspace screenshot](docs/assets/screenshots/native-2026-10-01/workspace.png) · [Video version](docs/assets/motion/chart-demo.mp4) · [Capture details](docs/assets/motion/chart-demo.md)
+
+Market screenshots use Binance public data; the separately labeled million-candle view uses simulation.
 
 ## Start with the chart
 
